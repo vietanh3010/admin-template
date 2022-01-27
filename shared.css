@@ -1,0 +1,136 @@
+c-button {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    white-space: nowrap
+}
+
+.c-button-active {
+    background: rgba(49, 151, 255, 0.2);
+    border: 1px solid rgba(49, 151, 255, 0.4);
+    color: #3197FF;
+}
+
+.c-button-inactive {
+    background:  rgba(255, 255, 255, 0.05);
+    color: #A0A0A0;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.c-button-primary {
+    background: #3197FF;
+    border: 1px solid #3197FF;
+    color: #FFFFFF;
+}
+
+.c-button-text {
+    background: transparent;
+    border: 1px solid rgba(49, 151, 255, 0.4);
+    color: #3197FF;
+}
+
+.c-button-size-default {
+    border-radius: 6px;
+    padding: 4px 16px;
+}
+
+.c-button-size-large {
+    border-radius: 8px;
+    padding: 8px 24px;
+}
+
+
+.c-stat-card-wrapper {
+    background: rgba(49, 151, 255, 0.1);
+    border: 1px solid rgba(49, 151, 255, 0.2);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+}
+
+.c-stat-card-wrapper > .title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    height: 24px;
+}
+.c-stat {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    height: 48px;
+}
+
+.item-center {
+    align-items: center;
+}
+.item-base-line {
+    align-items: baseline;
+}
+
+.c-stat-count {
+    height: 48px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    color: white;
+}
+.c-stat-unit {
+    height: 48px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 48px;
+    color: white;
+}
+.c-stat-sub-value {
+    color: white;
+    line-height: 48px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.c-stat-sub-value-increase {
+    color: #2DBC15;
+}
+
+.c-stat-sub-value-decrease {
+    color: #E8001C;
+}
+
+.c-stat-value {
+    display: flex;
+    align-items: center;
+}
+
+.tooltip-float {
+    visibility: hidden;
+}
+
+.tooltip-wrap .tooltip-float {
+    position: absolute;
+    padding: 8px;
+    width: fit-content;
+    max-width: 275px;
+    background: rgba(49, 151, 255, 0.8);
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #F6F6F6;
+}
+
+.tooltip-wrap:hover .tooltip-float{
+    visibility: visible;
+}

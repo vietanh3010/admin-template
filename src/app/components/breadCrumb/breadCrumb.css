@@ -1,0 +1,29 @@
+
+.bread-crumb-arrow {
+    width: 5px;
+    height: 10px;
+    margin-left: 19px;
+    margin-right: 19px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+#parentPath {
+    color: #7D7D7D;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: default;
+}
+
+#childPath {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+}
