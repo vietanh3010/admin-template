@@ -172,3 +172,106 @@ class CInfoTooltip extends HTMLElement {
 }
 
 customElements.define("c-info-tooltip", CInfoTooltip);
+
+class CDropdown extends HTMLElement {
+    constructor() {
+        super();
+        this.options = [];
+        this.dropdownTitle = '';
+    }
+
+    connectedCallback() {
+        this.options = JSON.parse(this.getAttribute("options"));
+        this.dropdownTitle = JSON.parse(this.getAttribute("dropdownTitle"));
+        this.render();
+    }
+
+    render() {
+        this.innerHTML = `
+            <div class="c-dropdown">
+                <span>${this.dropdownTitle}</span>
+                <select>
+                    ${this.options.map(opt =>
+            `<option value="${opt}">${opt}</option>`
+        )}
+                </select>
+                
+            </div>
+        `;
+    }
+}
+
+customElements.define("c-dropdown", CDropdown);
+
+class CGroupButton extends HTMLElement {
+
+    constructor() {
+        super();
+        this.options = [];
+        this.customLabel = '';
+        this.selectedOptions = []
+    }
+
+    connectedCallback() {
+        this.options = JSON.parse(this.getAttribute("options"));
+        this.customLabel = JSON.parse(this.getAttribute("customLabel"));
+
+        var div = document.createElement('div');
+        this.options.forEach(opt => {
+            var btn = document.createElement('button');
+            btn.innerHTML = opt;
+            btn.onclick = () => {
+                console.log('lcickedd')
+                const check = this.selectedOptions.includes(opt);
+                if (check) {
+                    this.selectedOptions = this.selectedOptions.filter(v => v !== opt)
+                }
+                else {
+                    this.selectedOptions.push(opt)
+                }
+                console.log(this.selectedOptions)
+                this.setAttribute('selectedOptions', JSON.stringify(this.selectedOptions))
+            };
+            div.appendChild(btn)
+        })
+
+
+        this.innerHTML = `
+            <div class="c-group-button">
+                <span>${this.customLabel}</span>
+                <div>
+                ${div.innerHTML}
+                </div>
+            </div>
+        `;
+    }
+
+    render() {
+        this.innerHTML = `
+            <div class="c-group-button">
+                <span>${this.customLabel}</span>
+                <div></div>
+            </div>
+        `;
+    }
+}
+
+customElements.define("c-group-button", CGroupButton);
+class CAdvancedSearch extends HTMLElement {
+
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
+    }
+
+    render() {
+        this.innerHTML = `
+            <div>
+            </div>
+        `;
+    }
+}
+
+customElements.define("c-advanced-search", CAdvancedSearch);

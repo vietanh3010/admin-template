@@ -134,3 +134,61 @@ c-button {
 .tooltip-wrap:hover .tooltip-float{
     visibility: visible;
 }
+
+.c-dropdown {
+   min-width: 248px;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 12px;
+   margin-top: 12px;
+}
+.c-dropdown > select {
+    min-width: inherit;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 40px;
+    color: white;
+    padding:10px;
+    background: #051F3D;
+}
+
+.c-dropdown > span {
+    color: white;
+    opacity: 0.8;
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+.c-group-button {
+    min-width: 248px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+.c-group-button > span {
+    color: white;
+    opacity: 0.8;
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+c-advanced-search {
+    width: 280px;
+    height: 100%;
+    z-index: 99;
+    position: absolute;
+    right: 0;
+    top:64px;
+    background: #051F3D;
+    /* box-shadow: 0px 0px 60px #000000; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 16px;
+}
+

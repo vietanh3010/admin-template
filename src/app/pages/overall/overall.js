@@ -8,12 +8,6 @@ var FILTER_DEFINE = [
         title: "Tuần này"
     },
     {
-        title: "Tháng này"
-    },
-    {
-        title: "Quý này"
-    },
-    {
         title: "30 ngày gần nhất"
     },
 ];
