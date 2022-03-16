@@ -131,8 +131,18 @@ function initAdvancedSearch() {
 }
 
 $(document).ready(function () {
-    initAdvancedSearch()
+    initAdvancedSearch();
+    clickSearch();
 });
+
+function clickSearch() {
+    const el = document.getElementById("close-search");
+    el.onclick = () => {
+        const search = document.getElementById('search');
+        search.classList.toggle('advanced-search-toggle')
+    }
+}
+
 
 
 

@@ -73,7 +73,8 @@ body {
 }
 
 .advanced-search-tab {
-    width: 280px;
+    opacity: 0;
+    width: 0px;
     height: 100%;
     z-index: 99;
     position: absolute;
@@ -125,4 +126,9 @@ body {
     border-radius: 8px;
     height: 32px;
     border: 1px solid lightgray;
+}
+
+.advanced-search-toggle {
+    width: 280px !important;
+    opacity: 1;
 }

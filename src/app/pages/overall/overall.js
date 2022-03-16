@@ -130,3 +130,14 @@ function setUpdateDate() {
 }
 
 setUpdateDate()
+
+
+function clickSearch() {
+    const el = document.getElementById("click-search");
+    el.onclick = () => {
+        const search = document.getElementById('search');
+        search.classList.toggle('advanced-search-toggle')
+    }
+}
+
+clickSearch();
