@@ -23,6 +23,8 @@ function genFilterBar() {
         elChild.onclick = () => {
             activeFilter = v.title;
             el.innerHTML = '';
+            const formTime = document.getElementById('formTime');
+            if (formTime) $('#formTime').prop('selectedIndex', FILTER_DEFINE.findIndex(x => x.title === v.title));
             genFilterBar();
         }
         el.appendChild(elChild);

@@ -1,0 +1,163 @@
+.advanced-search-tab {
+    opacity: 0;
+    width: 0px;
+    height: calc(100% - 64px);
+    z-index: 99;
+    position: absolute;
+    right: 0;
+    top: 64px;
+    background: #051F3D;
+    /* box-shadow: 0px 0px 60px #000000; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab-wrap {
+    width: 248px;
+    display: flex;
+    flex-direction: column;
+    margin: 12px auto;
+}
+
+.tab-title {
+    color: white;
+    opacity: 0.8;
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+.tab-wrap > select {
+    min-width: inherit;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 40px;
+    color: white;
+    padding:10px;
+    background: #051F3D;
+}
+
+.button-check {
+    background: rgba(49, 151, 255, 0.2) !important;
+}
+.button-check > span {
+    visibility: visible !important;
+}
+
+.tab-wrap button {
+    background: #051F3D;
+    color: white;
+    border-radius: 8px;
+}
+
+.advanced-search-toggle {
+    width: 280px !important;
+    opacity: 1;
+}
+
+.tab-header {
+    width: 89%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(49, 151, 255, 0.4);
+    padding:16px;
+}
+
+.tab-header > span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F6F6F6;
+}
+
+.tab-header > div {
+    color: white;
+    cursor: pointer;
+} 
+
+select, option {
+    cursor: pointer;
+}
+
+#formGender, #formAge {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 8px;
+    row-gap: 8px;
+}
+
+#formGender > button, 
+#formAge > button {
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 12px;
+    padding-right: 12px;
+    
+}
+
+#formGender > button > span, 
+#formAge > button > span {
+    visibility: hidden;
+}
+
+.tab-footer {
+    width: 248px;
+    margin-bottom: 12px;
+}
+
+.tab-footer > button {
+    cursor: pointer;
+}
+
+.tab-footer > #reset-btn{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #006CDA;
+    height: 40px;
+    border: 1px solid #006CDA;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 100%;
+    background: transparent;
+    margin-bottom: 12px;
+}
+.tab-footer > #submit-btn {
+    color: white;
+    height: 40px;
+    background: #3197FF;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #006CDA;
+}
+
+img {
+    user-select: none;
+}
+
+#close-search {
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid transparent;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
+
